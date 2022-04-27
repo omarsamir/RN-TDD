@@ -4,7 +4,7 @@ describe('Example', () => {
   });
 
   beforeEach(async () => {
-    await device.reloadReactNative();
+    await device.launchApp({newInstance: true});
   });
 
   it('should show the welcome message', async () => {
